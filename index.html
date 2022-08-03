@@ -17,7 +17,7 @@
             background-image: url(background.webp);
             text-align: center;
            
-            color: white;
+            color: black;
             background-size: cover;
             background-attachment: fixed;
             font-family:'Times New Roman', Times, serif;
@@ -35,6 +35,10 @@
           font-weight: 700;
           margin-top: 150px;
         }
+        p{
+          font-size: 24px;
+        }
+    
         input{
           width: 350px;
           padding: 5px;
@@ -46,7 +50,7 @@
     <div class="Container">
         <h1>Search Global Weather </h1>
         <form action="" method="GET">
-            <label for="city">Enter your City name</label>
+            <p><label for="city">Enter your City name</label></p>
             <p><input type="text" name="text" id="text" placeholder="City Name"></p>
             <button type="submit" name="submit" class="btn btn-success">Submit Now</button>
             <div class="output">
