@@ -45,8 +45,37 @@ input{
 
 .wrapper {
   margin: 0 9rem;
-  background-color: white;
+  background-color: transparent;
   height: 45vh;
   margin: 50px auto;
   border-radius: 2px;
+  position: center;
+  justify-content: center;
+  align-items: center;
+}
+  
+.wrapper h2{
+    padding: 5px 0;
+    text-align: center;
+    background:black;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+  }
+  .wrapper p{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: black;
+    font-size:23px;
+  }
 
+  .wrapper h2 span{
+    font-size: 26px;
+    color: black;
+  }
+
+  .wrapper p span{
+    color: #90006e;
+    font-size: 25px;
+  }
