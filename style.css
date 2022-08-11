@@ -44,11 +44,6 @@ input{
 }
 
 .wrapper {
-  margin: 0 9rem;
-  background-color: transparent;
-  height: 45vh;
-  margin: 50px auto;
-  border-radius: 2px;
   position: center;
   justify-content: center;
   align-items: center;
