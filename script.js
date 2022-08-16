@@ -5,11 +5,14 @@ let weather ={
             "https://api.openweathermap.org/data/2.5/weather?q= "
             + city +
             "&units=metric&appid="
-             + appKey
+             + this.apiKey
         )
         .then ((response) => response.json())
         .then (( data) =>console.log(data));
     },
+    displayWeather: function(data){
+        
+    }
 };
 
 
