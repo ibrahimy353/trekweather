@@ -46,11 +46,12 @@ body {
     outline: none;
     padding: 0.4em 1em;
     border-radius: 24px;
-    background: #7c7c7c2b;
+    background: lightgrey;
     color: white;
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
+    opacity: 1;
   }
   
   button:hover {
@@ -60,6 +61,7 @@ body {
   h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
+    color: azure;
   }
   
   .flex {
