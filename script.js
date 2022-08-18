@@ -6,6 +6,10 @@
             "https://api.openweathermap.org/data/2.5/weather?q=" +
               city +
               "&units=metric&appid=" +
+
+              //converts the units of fahrenheits to celsius
+
+
               this.apiKey
           )
             .then((response) => {
