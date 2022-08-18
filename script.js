@@ -3,14 +3,10 @@
         apiKey: "b9ee5b0470fbf2a7bdab2e932a32e487",
         fetchWeather: function (city) {
           fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q=" +
-              city +
-              "&units=metric&appid=" +
-
-              //converts the units of fahrenheits to celsius
-
-
-              this.apiKey
+            "https://api.openweathermap.org/data/2.5/weather?q=" 
+            + city 
+            + "&units=metric&appid=" //converts the units of fahrenheits to celsius
+            + this.apiKey
           )
             .then((response) => {
               if (!response.ok) {
@@ -21,7 +17,7 @@
             })
             .then((data) => this.displayWeather(data));
         },
-        displayWeather: function (data) {
+        displayWeather: function (data) {//gets weather data from line 8 which is the weather site   
           const { name } = data;
           const { icon, description } = data.weather[0];
           const { temp, humidity } = data.main;
@@ -37,7 +33,7 @@
             "Wind speed: " + speed + " km/h";
           document.querySelector(".weather").classList.remove("loading");
           document.body.style.backgroundImage =
-            "url('https://source.unsplash.com/1600x900/?" + name + "')";
+            "url('https://source.unsplash.com/1600x900/?" + name + "')";//changes the background of the design shifting images each time you refresh the page or search a city name 
         },
         search: function () {
           this.fetchWeather(document.querySelector(".search-bar").value);
